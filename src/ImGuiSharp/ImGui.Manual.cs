@@ -1,6 +1,6 @@
 ﻿namespace ImGuiSharp
 {
-    /*public static unsafe partial class ImGui
+    public static unsafe partial class ImGui
     {
         public static bool InputText(
             string label,
@@ -510,5 +510,5 @@
         {
             return MenuItem(label, string.Empty, false, enabled);
         }
-    }*/
+    }
 }
