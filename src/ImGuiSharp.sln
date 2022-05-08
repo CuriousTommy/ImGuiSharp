@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{F460
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.XNA", "samples\Sample.XNA\Sample.XNA.csproj", "{12580AFD-13CD-4AB7-BC2B-6398971C847F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Veldrid", "samples\Sample.Veldrid\Sample.Veldrid.csproj", "{A65DBED2-9356-4BD6-92F8-21040B1BA911}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -114,6 +116,18 @@ Global
 		{12580AFD-13CD-4AB7-BC2B-6398971C847F}.Release|x64.Build.0 = Release|Any CPU
 		{12580AFD-13CD-4AB7-BC2B-6398971C847F}.Release|x86.ActiveCfg = Release|Any CPU
 		{12580AFD-13CD-4AB7-BC2B-6398971C847F}.Release|x86.Build.0 = Release|Any CPU
+		{A65DBED2-9356-4BD6-92F8-21040B1BA911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65DBED2-9356-4BD6-92F8-21040B1BA911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65DBED2-9356-4BD6-92F8-21040B1BA911}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A65DBED2-9356-4BD6-92F8-21040B1BA911}.Debug|x64.Build.0 = Debug|Any CPU
+		{A65DBED2-9356-4BD6-92F8-21040B1BA911}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A65DBED2-9356-4BD6-92F8-21040B1BA911}.Debug|x86.Build.0 = Debug|Any CPU
+		{A65DBED2-9356-4BD6-92F8-21040B1BA911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65DBED2-9356-4BD6-92F8-21040B1BA911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65DBED2-9356-4BD6-92F8-21040B1BA911}.Release|x64.ActiveCfg = Release|Any CPU
+		{A65DBED2-9356-4BD6-92F8-21040B1BA911}.Release|x64.Build.0 = Release|Any CPU
+		{A65DBED2-9356-4BD6-92F8-21040B1BA911}.Release|x86.ActiveCfg = Release|Any CPU
+		{A65DBED2-9356-4BD6-92F8-21040B1BA911}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -123,5 +137,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{12580AFD-13CD-4AB7-BC2B-6398971C847F} = {F460EC7F-055B-4530-B7D5-0B90EEC6B549}
+		{A65DBED2-9356-4BD6-92F8-21040B1BA911} = {F460EC7F-055B-4530-B7D5-0B90EEC6B549}
 	EndGlobalSection
 EndGlobal
