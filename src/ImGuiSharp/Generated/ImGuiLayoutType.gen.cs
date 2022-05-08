@@ -1,7 +1,9 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiLayoutType
+namespace ImGuiSharp
 {
-    ImGuiLayoutTypeHorizontal = 0,
-    ImGuiLayoutTypeVertical = 1,
+    public enum ImGuiLayoutType
+    {
+        Horizontal = 0,
+        Vertical = 1,
+    }
 }

@@ -1,8 +1,10 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiSortDirection
+namespace ImGuiSharp
 {
-    ImGuiSortDirectionNone = 0,
-    ImGuiSortDirectionAscending = 1,
-    ImGuiSortDirectionDescending = 2,
+    public enum ImGuiSortDirection
+    {
+        None = 0,
+        Ascending = 1,
+        Descending = 2,
+    }
 }

@@ -1,11 +1,16 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiBackendFlags
+namespace ImGuiSharp
 {
-    ImGuiBackendFlagsNone = 0,
-    ImGuiBackendFlagsHasGamepad = 1 << 0,
-    ImGuiBackendFlagsHasMouseCursors = 1 << 1,
-    ImGuiBackendFlagsHasSetMousePos = 1 << 2,
-    ImGuiBackendFlagsRendererHasVtxOffset = 1 << 3,
+    [System.Flags]
+    public enum ImGuiBackendFlags
+    {
+        None = 0,
+        HasGamepad = 1,
+        HasMouseCursors = 2,
+        HasSetMousePos = 4,
+        RendererHasVtxOffset = 8,
+        PlatformHasViewports = 1024,
+        HasMouseHoveredViewport = 2048,
+        RendererHasViewports = 4096,
+    }
 }

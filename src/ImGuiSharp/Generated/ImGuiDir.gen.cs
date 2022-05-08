@@ -1,11 +1,13 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiDir
+namespace ImGuiSharp
 {
-    ImGuiDirNone = -1,
-    ImGuiDirLeft = 0,
-    ImGuiDirRight = 1,
-    ImGuiDirUp = 2,
-    ImGuiDirDown = 3,
-    ImGuiDirCOUNT = 4,
+    public enum ImGuiDir
+    {
+        None = -1,
+        Left = 0,
+        Right = 1,
+        Up = 2,
+        Down = 3,
+        COUNT = 4,
+    }
 }

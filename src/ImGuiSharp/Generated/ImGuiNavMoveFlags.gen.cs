@@ -1,20 +1,22 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiNavMoveFlags
+namespace ImGuiSharp
 {
-    ImGuiNavMoveFlagsNone = 0,
-    ImGuiNavMoveFlagsLoopX = 1 << 0,
-    ImGuiNavMoveFlagsLoopY = 1 << 1,
-    ImGuiNavMoveFlagsWrapX = 1 << 2,
-    ImGuiNavMoveFlagsWrapY = 1 << 3,
-    ImGuiNavMoveFlagsAllowCurrentNavId = 1 << 4,
-    ImGuiNavMoveFlagsAlsoScoreVisibleSet = 1 << 5,
-    ImGuiNavMoveFlagsScrollToEdgeY = 1 << 6,
-    ImGuiNavMoveFlagsForwarded = 1 << 7,
-    ImGuiNavMoveFlagsDebugNoResult = 1 << 8,
-    ImGuiNavMoveFlagsFocusApi = 1 << 9,
-    ImGuiNavMoveFlagsTabbing = 1 << 10,
-    ImGuiNavMoveFlagsActivate = 1 << 11,
-    ImGuiNavMoveFlagsDontSetNavHighlight = 1 << 12,
+    [System.Flags]
+    public enum ImGuiNavMoveFlags
+    {
+        None = 0,
+        LoopX = 1,
+        LoopY = 2,
+        WrapX = 4,
+        WrapY = 8,
+        AllowCurrentNavId = 16,
+        AlsoScoreVisibleSet = 32,
+        ScrollToEdgeY = 64,
+        Forwarded = 128,
+        DebugNoResult = 256,
+        FocusApi = 512,
+        Tabbing = 1024,
+        Activate = 2048,
+        DontSetNavHighlight = 4096,
+    }
 }

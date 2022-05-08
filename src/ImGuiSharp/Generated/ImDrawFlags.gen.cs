@@ -1,20 +1,22 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImDrawFlags
+namespace ImGuiSharp
 {
-    ImDrawFlagsNone = 0,
-    ImDrawFlagsClosed = 1 << 0,
-    ImDrawFlagsRoundCornersTopLeft = 1 << 4,
-    ImDrawFlagsRoundCornersTopRight = 1 << 5,
-    ImDrawFlagsRoundCornersBottomLeft = 1 << 6,
-    ImDrawFlagsRoundCornersBottomRight = 1 << 7,
-    ImDrawFlagsRoundCornersNone = 1 << 8,
-    ImDrawFlagsRoundCornersTop = ImDrawFlagsRoundCornersTopLeft | ImDrawFlagsRoundCornersTopRight,
-    ImDrawFlagsRoundCornersBottom = ImDrawFlagsRoundCornersBottomLeft | ImDrawFlagsRoundCornersBottomRight,
-    ImDrawFlagsRoundCornersLeft = ImDrawFlagsRoundCornersBottomLeft | ImDrawFlagsRoundCornersTopLeft,
-    ImDrawFlagsRoundCornersRight = ImDrawFlagsRoundCornersBottomRight | ImDrawFlagsRoundCornersTopRight,
-    ImDrawFlagsRoundCornersAll = ImDrawFlagsRoundCornersTopLeft | ImDrawFlagsRoundCornersTopRight | ImDrawFlagsRoundCornersBottomLeft | ImDrawFlagsRoundCornersBottomRight,
-    ImDrawFlagsRoundCornersDefault = ImDrawFlagsRoundCornersAll,
-    ImDrawFlagsRoundCornersMask = ImDrawFlagsRoundCornersAll | ImDrawFlagsRoundCornersNone,
+    [System.Flags]
+    public enum ImDrawFlags
+    {
+        None = 0,
+        Closed = 1,
+        RoundCornersTopLeft = 16,
+        RoundCornersTopRight = 32,
+        RoundCornersBottomLeft = 64,
+        RoundCornersBottomRight = 128,
+        RoundCornersNone = 256,
+        RoundCornersTop = 48,
+        RoundCornersBottom = 192,
+        RoundCornersLeft = 80,
+        RoundCornersRight = 160,
+        RoundCornersAll = 240,
+        RoundCornersDefault = 240,
+        RoundCornersMask = 496,
+    }
 }

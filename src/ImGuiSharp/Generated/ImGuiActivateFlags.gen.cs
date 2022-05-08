@@ -1,10 +1,12 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiActivateFlags
+namespace ImGuiSharp
 {
-    ImGuiActivateFlagsNone = 0,
-    ImGuiActivateFlagsPreferInput = 1 << 0,
-    ImGuiActivateFlagsPreferTweak = 1 << 1,
-    ImGuiActivateFlagsTryToPreserveState = 1 << 2,
+    [System.Flags]
+    public enum ImGuiActivateFlags
+    {
+        None = 0,
+        PreferInput = 1,
+        PreferTweak = 2,
+        TryToPreserveState = 4,
+    }
 }

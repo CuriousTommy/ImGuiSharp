@@ -1,17 +1,19 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiPopupFlags
+namespace ImGuiSharp
 {
-    ImGuiPopupFlagsNone = 0,
-    ImGuiPopupFlagsMouseButtonLeft = 0,
-    ImGuiPopupFlagsMouseButtonRight = 1,
-    ImGuiPopupFlagsMouseButtonMiddle = 2,
-    ImGuiPopupFlagsMouseButtonMask = 0x1F,
-    ImGuiPopupFlagsMouseButtonDefault = 1,
-    ImGuiPopupFlagsNoOpenOverExistingPopup = 1 << 5,
-    ImGuiPopupFlagsNoOpenOverItems = 1 << 6,
-    ImGuiPopupFlagsAnyPopupId = 1 << 7,
-    ImGuiPopupFlagsAnyPopupLevel = 1 << 8,
-    ImGuiPopupFlagsAnyPopup = ImGuiPopupFlagsAnyPopupId | ImGuiPopupFlagsAnyPopupLevel,
+    [System.Flags]
+    public enum ImGuiPopupFlags
+    {
+        None = 0,
+        MouseButtonLeft = 0,
+        MouseButtonRight = 1,
+        MouseButtonMiddle = 2,
+        MouseButtonMask = 31,
+        MouseButtonDefault = 1,
+        NoOpenOverExistingPopup = 32,
+        NoOpenOverItems = 64,
+        AnyPopupId = 128,
+        AnyPopupLevel = 256,
+        AnyPopup = 384,
+    }
 }

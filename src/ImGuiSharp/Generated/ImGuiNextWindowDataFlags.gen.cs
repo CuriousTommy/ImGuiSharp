@@ -1,15 +1,20 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiNextWindowDataFlags
+namespace ImGuiSharp
 {
-    ImGuiNextWindowDataFlagsNone = 0,
-    ImGuiNextWindowDataFlagsHasPos = 1 << 0,
-    ImGuiNextWindowDataFlagsHasSize = 1 << 1,
-    ImGuiNextWindowDataFlagsHasContentSize = 1 << 2,
-    ImGuiNextWindowDataFlagsHasCollapsed = 1 << 3,
-    ImGuiNextWindowDataFlagsHasSizeConstraint = 1 << 4,
-    ImGuiNextWindowDataFlagsHasFocus = 1 << 5,
-    ImGuiNextWindowDataFlagsHasBgAlpha = 1 << 6,
-    ImGuiNextWindowDataFlagsHasScroll = 1 << 7,
+    [System.Flags]
+    public enum ImGuiNextWindowDataFlags
+    {
+        None = 0,
+        HasPos = 1,
+        HasSize = 2,
+        HasContentSize = 4,
+        HasCollapsed = 8,
+        HasSizeConstraint = 16,
+        HasFocus = 32,
+        HasBgAlpha = 64,
+        HasScroll = 128,
+        HasViewport = 256,
+        HasDock = 512,
+        HasWindowClass = 1024,
+    }
 }

@@ -1,15 +1,17 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiTabItemFlags
+namespace ImGuiSharp
 {
-    ImGuiTabItemFlagsNone = 0,
-    ImGuiTabItemFlagsUnsavedDocument = 1 << 0,
-    ImGuiTabItemFlagsSetSelected = 1 << 1,
-    ImGuiTabItemFlagsNoCloseWithMiddleMouseButton = 1 << 2,
-    ImGuiTabItemFlagsNoPushId = 1 << 3,
-    ImGuiTabItemFlagsNoTooltip = 1 << 4,
-    ImGuiTabItemFlagsNoReorder = 1 << 5,
-    ImGuiTabItemFlagsLeading = 1 << 6,
-    ImGuiTabItemFlagsTrailing = 1 << 7,
+    [System.Flags]
+    public enum ImGuiTabItemFlags
+    {
+        None = 0,
+        UnsavedDocument = 1,
+        SetSelected = 2,
+        NoCloseWithMiddleMouseButton = 4,
+        NoPushId = 8,
+        NoTooltip = 16,
+        NoReorder = 32,
+        Leading = 64,
+        Trailing = 128,
+    }
 }

@@ -1,10 +1,12 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiCond
+namespace ImGuiSharp
 {
-    ImGuiCondNone = 0,
-    ImGuiCondAlways = 1 << 0,
-    ImGuiCondOnce = 1 << 1,
-    ImGuiCondFirstUseEver = 1 << 2,
-    ImGuiCondAppearing = 1 << 3,
+    public enum ImGuiCond
+    {
+        None = 0,
+        Always = 1,
+        Once = 2,
+        FirstUseEver = 4,
+        Appearing = 8,
+    }
 }

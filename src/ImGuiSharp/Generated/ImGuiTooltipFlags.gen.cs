@@ -1,8 +1,10 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiTooltipFlags
+namespace ImGuiSharp
 {
-    ImGuiTooltipFlagsNone = 0,
-    ImGuiTooltipFlagsOverridePreviousTooltip = 1 << 0,
+    [System.Flags]
+    public enum ImGuiTooltipFlags
+    {
+        None = 0,
+        OverridePreviousTooltip = 1,
+    }
 }

@@ -1,8 +1,10 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiAxis
+namespace ImGuiSharp
 {
-    ImGuiAxisNone = -1,
-    ImGuiAxisX = 0,
-    ImGuiAxisY = 1,
+    public enum ImGuiAxis
+    {
+        None = -1,
+        X = 0,
+        Y = 1,
+    }
 }

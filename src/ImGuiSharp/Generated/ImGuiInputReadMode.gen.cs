@@ -1,11 +1,13 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiInputReadMode
+namespace ImGuiSharp
 {
-    ImGuiInputReadModeDown = 0,
-    ImGuiInputReadModePressed = 1,
-    ImGuiInputReadModeReleased = 2,
-    ImGuiInputReadModeRepeat = 3,
-    ImGuiInputReadModeRepeatSlow = 4,
-    ImGuiInputReadModeRepeatFast = 5,
+    public enum ImGuiInputReadMode
+    {
+        Down = 0,
+        Pressed = 1,
+        Released = 2,
+        Repeat = 3,
+        RepeatSlow = 4,
+        RepeatFast = 5,
+    }
 }

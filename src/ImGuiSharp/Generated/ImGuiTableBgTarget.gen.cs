@@ -1,9 +1,11 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiTableBgTarget
+namespace ImGuiSharp
 {
-    ImGuiTableBgTargetNone = 0,
-    ImGuiTableBgTargetRowBg0 = 1,
-    ImGuiTableBgTargetRowBg1 = 2,
-    ImGuiTableBgTargetCellBg = 3,
+    public enum ImGuiTableBgTarget
+    {
+        None = 0,
+        RowBg0 = 1,
+        RowBg1 = 2,
+        CellBg = 3,
+    }
 }

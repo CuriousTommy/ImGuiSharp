@@ -1,8 +1,10 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiTableRowFlags
+namespace ImGuiSharp
 {
-    ImGuiTableRowFlagsNone = 0,
-    ImGuiTableRowFlagsHeaders = 1 << 0,
+    [System.Flags]
+    public enum ImGuiTableRowFlags
+    {
+        None = 0,
+        Headers = 1,
+    }
 }

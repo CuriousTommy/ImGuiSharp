@@ -1,15 +1,17 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiComboFlags
+namespace ImGuiSharp
 {
-    ImGuiComboFlagsNone = 0,
-    ImGuiComboFlagsPopupAlignLeft = 1 << 0,
-    ImGuiComboFlagsHeightSmall = 1 << 1,
-    ImGuiComboFlagsHeightRegular = 1 << 2,
-    ImGuiComboFlagsHeightLarge = 1 << 3,
-    ImGuiComboFlagsHeightLargest = 1 << 4,
-    ImGuiComboFlagsNoArrowButton = 1 << 5,
-    ImGuiComboFlagsNoPreview = 1 << 6,
-    ImGuiComboFlagsHeightMask = ImGuiComboFlagsHeightSmall | ImGuiComboFlagsHeightRegular | ImGuiComboFlagsHeightLarge | ImGuiComboFlagsHeightLargest,
+    [System.Flags]
+    public enum ImGuiComboFlags
+    {
+        None = 0,
+        PopupAlignLeft = 1,
+        HeightSmall = 2,
+        HeightRegular = 4,
+        HeightLarge = 8,
+        HeightLargest = 16,
+        NoArrowButton = 32,
+        NoPreview = 64,
+        HeightMask = 30,
+    }
 }

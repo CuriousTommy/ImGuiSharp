@@ -1,11 +1,13 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImDrawListFlags
+namespace ImGuiSharp
 {
-    ImDrawListFlagsNone = 0,
-    ImDrawListFlagsAntiAliasedLines = 1 << 0,
-    ImDrawListFlagsAntiAliasedLinesUseTex = 1 << 1,
-    ImDrawListFlagsAntiAliasedFill = 1 << 2,
-    ImDrawListFlagsAllowVtxOffset = 1 << 3,
+    [System.Flags]
+    public enum ImDrawListFlags
+    {
+        None = 0,
+        AntiAliasedLines = 1,
+        AntiAliasedLinesUseTex = 2,
+        AntiAliasedFill = 4,
+        AllowVtxOffset = 8,
+    }
 }

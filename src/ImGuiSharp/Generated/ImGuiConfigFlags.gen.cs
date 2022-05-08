@@ -1,15 +1,21 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiConfigFlags
+namespace ImGuiSharp
 {
-    ImGuiConfigFlagsNone = 0,
-    ImGuiConfigFlagsNavEnableKeyboard = 1 << 0,
-    ImGuiConfigFlagsNavEnableGamepad = 1 << 1,
-    ImGuiConfigFlagsNavEnableSetMousePos = 1 << 2,
-    ImGuiConfigFlagsNavNoCaptureKeyboard = 1 << 3,
-    ImGuiConfigFlagsNoMouse = 1 << 4,
-    ImGuiConfigFlagsNoMouseCursorChange = 1 << 5,
-    ImGuiConfigFlagsIsSRGB = 1 << 20,
-    ImGuiConfigFlagsIsTouchScreen = 1 << 21,
+    [System.Flags]
+    public enum ImGuiConfigFlags
+    {
+        None = 0,
+        NavEnableKeyboard = 1,
+        NavEnableGamepad = 2,
+        NavEnableSetMousePos = 4,
+        NavNoCaptureKeyboard = 8,
+        NoMouse = 16,
+        NoMouseCursorChange = 32,
+        DockingEnable = 64,
+        ViewportsEnable = 1024,
+        DpiEnableScaleViewports = 16384,
+        DpiEnableScaleFonts = 32768,
+        IsSRGB = 1048576,
+        IsTouchScreen = 2097152,
+    }
 }

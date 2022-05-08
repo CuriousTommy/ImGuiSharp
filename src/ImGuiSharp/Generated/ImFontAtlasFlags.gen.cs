@@ -1,10 +1,12 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImFontAtlasFlags
+namespace ImGuiSharp
 {
-    ImFontAtlasFlagsNone = 0,
-    ImFontAtlasFlagsNoPowerOfTwoHeight = 1 << 0,
-    ImFontAtlasFlagsNoMouseCursors = 1 << 1,
-    ImFontAtlasFlagsNoBakedLines = 1 << 2,
+    [System.Flags]
+    public enum ImFontAtlasFlags
+    {
+        None = 0,
+        NoPowerOfTwoHeight = 1,
+        NoMouseCursors = 2,
+        NoBakedLines = 4,
+    }
 }

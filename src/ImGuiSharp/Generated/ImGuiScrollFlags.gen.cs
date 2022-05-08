@@ -1,16 +1,18 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiScrollFlags
+namespace ImGuiSharp
 {
-    ImGuiScrollFlagsNone = 0,
-    ImGuiScrollFlagsKeepVisibleEdgeX = 1 << 0,
-    ImGuiScrollFlagsKeepVisibleEdgeY = 1 << 1,
-    ImGuiScrollFlagsKeepVisibleCenterX = 1 << 2,
-    ImGuiScrollFlagsKeepVisibleCenterY = 1 << 3,
-    ImGuiScrollFlagsAlwaysCenterX = 1 << 4,
-    ImGuiScrollFlagsAlwaysCenterY = 1 << 5,
-    ImGuiScrollFlagsNoScrollParent = 1 << 6,
-    ImGuiScrollFlagsMaskX = ImGuiScrollFlagsKeepVisibleEdgeX | ImGuiScrollFlagsKeepVisibleCenterX | ImGuiScrollFlagsAlwaysCenterX,
-    ImGuiScrollFlagsMaskY = ImGuiScrollFlagsKeepVisibleEdgeY | ImGuiScrollFlagsKeepVisibleCenterY | ImGuiScrollFlagsAlwaysCenterY,
+    [System.Flags]
+    public enum ImGuiScrollFlags
+    {
+        None = 0,
+        KeepVisibleEdgeX = 1,
+        KeepVisibleEdgeY = 2,
+        KeepVisibleCenterX = 4,
+        KeepVisibleCenterY = 8,
+        AlwaysCenterX = 16,
+        AlwaysCenterY = 32,
+        NoScrollParent = 64,
+        MaskX = 21,
+        MaskY = 42,
+    }
 }

@@ -1,17 +1,19 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiDragDropFlags
+namespace ImGuiSharp
 {
-    ImGuiDragDropFlagsNone = 0,
-    ImGuiDragDropFlagsSourceNoPreviewTooltip = 1 << 0,
-    ImGuiDragDropFlagsSourceNoDisableHover = 1 << 1,
-    ImGuiDragDropFlagsSourceNoHoldToOpenOthers = 1 << 2,
-    ImGuiDragDropFlagsSourceAllowNullID = 1 << 3,
-    ImGuiDragDropFlagsSourceExtern = 1 << 4,
-    ImGuiDragDropFlagsSourceAutoExpirePayload = 1 << 5,
-    ImGuiDragDropFlagsAcceptBeforeDelivery = 1 << 10,
-    ImGuiDragDropFlagsAcceptNoDrawDefaultRect = 1 << 11,
-    ImGuiDragDropFlagsAcceptNoPreviewTooltip = 1 << 12,
-    ImGuiDragDropFlagsAcceptPeekOnly = ImGuiDragDropFlagsAcceptBeforeDelivery | ImGuiDragDropFlagsAcceptNoDrawDefaultRect,
+    [System.Flags]
+    public enum ImGuiDragDropFlags
+    {
+        None = 0,
+        SourceNoPreviewTooltip = 1,
+        SourceNoDisableHover = 2,
+        SourceNoHoldToOpenOthers = 4,
+        SourceAllowNullID = 8,
+        SourceExtern = 16,
+        SourceAutoExpirePayload = 32,
+        AcceptBeforeDelivery = 1024,
+        AcceptNoDrawDefaultRect = 2048,
+        AcceptNoPreviewTooltip = 4096,
+        AcceptPeekOnly = 3072,
+    }
 }

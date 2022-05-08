@@ -1,27 +1,29 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiInputTextFlags
+namespace ImGuiSharp
 {
-    ImGuiInputTextFlagsNone = 0,
-    ImGuiInputTextFlagsCharsDecimal = 1 << 0,
-    ImGuiInputTextFlagsCharsHexadecimal = 1 << 1,
-    ImGuiInputTextFlagsCharsUppercase = 1 << 2,
-    ImGuiInputTextFlagsCharsNoBlank = 1 << 3,
-    ImGuiInputTextFlagsAutoSelectAll = 1 << 4,
-    ImGuiInputTextFlagsEnterReturnsTrue = 1 << 5,
-    ImGuiInputTextFlagsCallbackCompletion = 1 << 6,
-    ImGuiInputTextFlagsCallbackHistory = 1 << 7,
-    ImGuiInputTextFlagsCallbackAlways = 1 << 8,
-    ImGuiInputTextFlagsCallbackCharFilter = 1 << 9,
-    ImGuiInputTextFlagsAllowTabInput = 1 << 10,
-    ImGuiInputTextFlagsCtrlEnterForNewLine = 1 << 11,
-    ImGuiInputTextFlagsNoHorizontalScroll = 1 << 12,
-    ImGuiInputTextFlagsAlwaysOverwrite = 1 << 13,
-    ImGuiInputTextFlagsReadOnly = 1 << 14,
-    ImGuiInputTextFlagsPassword = 1 << 15,
-    ImGuiInputTextFlagsNoUndoRedo = 1 << 16,
-    ImGuiInputTextFlagsCharsScientific = 1 << 17,
-    ImGuiInputTextFlagsCallbackResize = 1 << 18,
-    ImGuiInputTextFlagsCallbackEdit = 1 << 19,
+    [System.Flags]
+    public enum ImGuiInputTextFlags
+    {
+        None = 0,
+        CharsDecimal = 1,
+        CharsHexadecimal = 2,
+        CharsUppercase = 4,
+        CharsNoBlank = 8,
+        AutoSelectAll = 16,
+        EnterReturnsTrue = 32,
+        CallbackCompletion = 64,
+        CallbackHistory = 128,
+        CallbackAlways = 256,
+        CallbackCharFilter = 512,
+        AllowTabInput = 1024,
+        CtrlEnterForNewLine = 2048,
+        NoHorizontalScroll = 4096,
+        AlwaysOverwrite = 8192,
+        ReadOnly = 16384,
+        Password = 32768,
+        NoUndoRedo = 65536,
+        CharsScientific = 131072,
+        CallbackResize = 262144,
+        CallbackEdit = 524288,
+    }
 }

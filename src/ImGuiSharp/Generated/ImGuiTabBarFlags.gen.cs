@@ -1,17 +1,19 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiTabBarFlags
+namespace ImGuiSharp
 {
-    ImGuiTabBarFlagsNone = 0,
-    ImGuiTabBarFlagsReorderable = 1 << 0,
-    ImGuiTabBarFlagsAutoSelectNewTabs = 1 << 1,
-    ImGuiTabBarFlagsTabListPopupButton = 1 << 2,
-    ImGuiTabBarFlagsNoCloseWithMiddleMouseButton = 1 << 3,
-    ImGuiTabBarFlagsNoTabListScrollingButtons = 1 << 4,
-    ImGuiTabBarFlagsNoTooltip = 1 << 5,
-    ImGuiTabBarFlagsFittingPolicyResizeDown = 1 << 6,
-    ImGuiTabBarFlagsFittingPolicyScroll = 1 << 7,
-    ImGuiTabBarFlagsFittingPolicyMask = ImGuiTabBarFlagsFittingPolicyResizeDown | ImGuiTabBarFlagsFittingPolicyScroll,
-    ImGuiTabBarFlagsFittingPolicyDefault = ImGuiTabBarFlagsFittingPolicyResizeDown,
+    [System.Flags]
+    public enum ImGuiTabBarFlags
+    {
+        None = 0,
+        Reorderable = 1,
+        AutoSelectNewTabs = 2,
+        TabListPopupButton = 4,
+        NoCloseWithMiddleMouseButton = 8,
+        NoTabListScrollingButtons = 16,
+        NoTooltip = 32,
+        FittingPolicyResizeDown = 64,
+        FittingPolicyScroll = 128,
+        FittingPolicyMask = 192,
+        FittingPolicyDefault = 64,
+    }
 }

@@ -1,8 +1,10 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiPopupPositionPolicy
+namespace ImGuiSharp
 {
-    ImGuiPopupPositionPolicyDefault = 0,
-    ImGuiPopupPositionPolicyComboBox = 1,
-    ImGuiPopupPositionPolicyTooltip = 2,
+    public enum ImGuiPopupPositionPolicy
+    {
+        Default = 0,
+        ComboBox = 1,
+        Tooltip = 2,
+    }
 }

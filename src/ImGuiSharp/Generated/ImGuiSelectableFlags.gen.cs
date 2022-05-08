@@ -1,12 +1,14 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiSelectableFlags
+namespace ImGuiSharp
 {
-    ImGuiSelectableFlagsNone = 0,
-    ImGuiSelectableFlagsDontClosePopups = 1 << 0,
-    ImGuiSelectableFlagsSpanAllColumns = 1 << 1,
-    ImGuiSelectableFlagsAllowDoubleClick = 1 << 2,
-    ImGuiSelectableFlagsDisabled = 1 << 3,
-    ImGuiSelectableFlagsAllowItemOverlap = 1 << 4,
+    [System.Flags]
+    public enum ImGuiSelectableFlags
+    {
+        None = 0,
+        DontClosePopups = 1,
+        SpanAllColumns = 2,
+        AllowDoubleClick = 4,
+        Disabled = 8,
+        AllowItemOverlap = 16,
+    }
 }

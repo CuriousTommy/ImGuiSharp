@@ -1,13 +1,15 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiContextHookType
+namespace ImGuiSharp
 {
-    ImGuiContextHookTypeNewFramePre = 0,
-    ImGuiContextHookTypeNewFramePost = 1,
-    ImGuiContextHookTypeEndFramePre = 2,
-    ImGuiContextHookTypeEndFramePost = 3,
-    ImGuiContextHookTypeRenderPre = 4,
-    ImGuiContextHookTypeRenderPost = 5,
-    ImGuiContextHookTypeShutdown = 6,
-    ImGuiContextHookTypePendingRemoval = 7,
+    public enum ImGuiContextHookType
+    {
+        NewFramePre = 0,
+        NewFramePost = 1,
+        EndFramePre = 2,
+        EndFramePost = 3,
+        RenderPre = 4,
+        RenderPost = 5,
+        Shutdown = 6,
+        PendingRemoval = 7,
+    }
 }

@@ -1,8 +1,10 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiNavLayer
+namespace ImGuiSharp
 {
-    ImGuiNavLayerMain = 0,
-    ImGuiNavLayerMenu = 1,
-    ImGuiNavLayerCOUNT = 2,
+    public enum ImGuiNavLayer
+    {
+        Main = 0,
+        Menu = 1,
+        COUNT = 2,
+    }
 }

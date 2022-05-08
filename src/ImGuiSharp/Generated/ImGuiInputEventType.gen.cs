@@ -1,13 +1,16 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiInputEventType
+namespace ImGuiSharp
 {
-    ImGuiInputEventTypeNone = 0,
-    ImGuiInputEventTypeMousePos = 1,
-    ImGuiInputEventTypeMouseWheel = 2,
-    ImGuiInputEventTypeMouseButton = 3,
-    ImGuiInputEventTypeKey = 4,
-    ImGuiInputEventTypeChar = 5,
-    ImGuiInputEventTypeFocus = 6,
-    ImGuiInputEventTypeCOUNT = 7,
+    public enum ImGuiInputEventType
+    {
+        None = 0,
+        MousePos = 1,
+        MouseWheel = 2,
+        MouseButton = 3,
+        MouseViewport = 4,
+        Key = 5,
+        Char = 6,
+        Focus = 7,
+        COUNT = 8,
+    }
 }

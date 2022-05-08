@@ -1,7 +1,9 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiPlotType
+namespace ImGuiSharp
 {
-    ImGuiPlotTypeLines = 0,
-    ImGuiPlotTypeHistogram = 1,
+    public enum ImGuiPlotType
+    {
+        Lines = 0,
+        Histogram = 1,
+    }
 }

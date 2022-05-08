@@ -1,12 +1,14 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-[System.Flags]
-public enum ImGuiButtonFlags
+namespace ImGuiSharp
 {
-    ImGuiButtonFlagsNone = 0,
-    ImGuiButtonFlagsMouseButtonLeft = 1 << 0,
-    ImGuiButtonFlagsMouseButtonRight = 1 << 1,
-    ImGuiButtonFlagsMouseButtonMiddle = 1 << 2,
-    ImGuiButtonFlagsMouseButtonMask = ImGuiButtonFlagsMouseButtonLeft | ImGuiButtonFlagsMouseButtonRight | ImGuiButtonFlagsMouseButtonMiddle,
-    ImGuiButtonFlagsMouseButtonDefault = ImGuiButtonFlagsMouseButtonLeft,
+    [System.Flags]
+    public enum ImGuiButtonFlags
+    {
+        None = 0,
+        MouseButtonLeft = 1,
+        MouseButtonRight = 2,
+        MouseButtonMiddle = 4,
+        MouseButtonMask = 7,
+        MouseButtonDefault = 1,
+    }
 }

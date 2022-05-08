@@ -1,26 +1,28 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiNavInput
+namespace ImGuiSharp
 {
-    ImGuiNavInputActivate = 0,
-    ImGuiNavInputCancel = 1,
-    ImGuiNavInputInput = 2,
-    ImGuiNavInputMenu = 3,
-    ImGuiNavInputDpadLeft = 4,
-    ImGuiNavInputDpadRight = 5,
-    ImGuiNavInputDpadUp = 6,
-    ImGuiNavInputDpadDown = 7,
-    ImGuiNavInputLStickLeft = 8,
-    ImGuiNavInputLStickRight = 9,
-    ImGuiNavInputLStickUp = 10,
-    ImGuiNavInputLStickDown = 11,
-    ImGuiNavInputFocusPrev = 12,
-    ImGuiNavInputFocusNext = 13,
-    ImGuiNavInputTweakSlow = 14,
-    ImGuiNavInputTweakFast = 15,
-    ImGuiNavInputKeyLeft = 16,
-    ImGuiNavInputKeyRight = 17,
-    ImGuiNavInputKeyUp = 18,
-    ImGuiNavInputKeyDown = 19,
-    ImGuiNavInputCOUNT = 20,
+    public enum ImGuiNavInput
+    {
+        Activate = 0,
+        Cancel = 1,
+        Input = 2,
+        Menu = 3,
+        DpadLeft = 4,
+        DpadRight = 5,
+        DpadUp = 6,
+        DpadDown = 7,
+        LStickLeft = 8,
+        LStickRight = 9,
+        LStickUp = 10,
+        LStickDown = 11,
+        FocusPrev = 12,
+        FocusNext = 13,
+        TweakSlow = 14,
+        TweakFast = 15,
+        KeyLeft = 16,
+        KeyRight = 17,
+        KeyUp = 18,
+        KeyDown = 19,
+        COUNT = 20,
+    }
 }

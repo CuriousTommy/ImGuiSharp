@@ -1,16 +1,18 @@
 // ReSharper disable once CheckNamespace
-namespace ImGui;
-public enum ImGuiDataType
+namespace ImGuiSharp
 {
-    ImGuiDataTypeS8 = 0,
-    ImGuiDataTypeU8 = 1,
-    ImGuiDataTypeS16 = 2,
-    ImGuiDataTypeU16 = 3,
-    ImGuiDataTypeS32 = 4,
-    ImGuiDataTypeU32 = 5,
-    ImGuiDataTypeS64 = 6,
-    ImGuiDataTypeU64 = 7,
-    ImGuiDataTypeFloat = 8,
-    ImGuiDataTypeDouble = 9,
-    ImGuiDataTypeCOUNT = 10,
+    public enum ImGuiDataType
+    {
+        S8 = 0,
+        U8 = 1,
+        S16 = 2,
+        U16 = 3,
+        S32 = 4,
+        U32 = 5,
+        S64 = 6,
+        U64 = 7,
+        Float = 8,
+        Double = 9,
+        COUNT = 10,
+    }
 }
