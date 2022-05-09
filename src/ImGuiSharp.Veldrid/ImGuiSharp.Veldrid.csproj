@@ -4,7 +4,7 @@
         <Description>A Utility to make it easier to use with veldrid.</Description>
         <AssemblyVersion>0.0.0.1</AssemblyVersion>
         <Authors>MarioGK</Authors>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net5.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
