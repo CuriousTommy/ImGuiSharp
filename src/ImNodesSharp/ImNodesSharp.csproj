@@ -13,7 +13,7 @@
         <PackageProjectUrl>https://github.com/MarioGK/ImGuiSharp</PackageProjectUrl>
         <DocumentationFile Condition="'$(Configuration)' == 'Release'">$(OutputPath)\ImNodesSharp.xml</DocumentationFile>
         <RootNamespace>imnodesNET</RootNamespace>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>

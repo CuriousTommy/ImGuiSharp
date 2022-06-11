@@ -11,7 +11,7 @@
         <PackageTags>ImPlot ImGui ImGui.NET Immediate Mode GUI</PackageTags>
         <PackageProjectUrl>https://github.com/MarioGK/ImGuiSharp</PackageProjectUrl>
         <DocumentationFile Condition="'$(Configuration)' == 'Release'">$(OutputPath)\ImPlotSharp.xml</DocumentationFile>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <LangVersion>preview</LangVersion>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
